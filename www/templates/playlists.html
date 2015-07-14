@@ -1,0 +1,9 @@
+<ion-view view-title="Brands">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="brand in brands" href="#/app/brand/{{brand.objectId}}" ng-if="brand.brand">
+        {{brand.brand}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
